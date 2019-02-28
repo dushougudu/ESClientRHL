@@ -85,9 +85,9 @@ CURD+聚合的功能包
 
 ```
 <dependency>
-    <groupId>com.sinosoft</groupId>
+    <groupId>org.zxp</groupId>
     <artifactId>esclientrhl</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 
@@ -239,7 +239,7 @@ String copy_to() default "";
 如果实体类不在启动类的包路径下，如需启用此功能，需要在启动注解上配置实体类路径。
 
 ```
-@EnableESTools(entityPath = "com.sinosoft.esdemo.domain")
+@EnableESTools(entityPath = "com.*.esdemo.domain")
 ```
 ###### 手工创建或删除索引结构
 
